@@ -53,6 +53,20 @@ class Pokemon{
                     console.log("Cette attaque est normale !");
                 }
             }
+            else if(this.type == "Plante"){
+                if(p.type == "Eau"){
+                    p.pointsDeVie -= (this.pointsAttaque * 2);
+                    console.log("C'est super efficace !");
+                }
+                else if (p.type == "Feu" || p.type == "Plante"){
+                    p.pointsDeVie -= (this.pointsAttaque / 2);
+                    console.log("Ce n'est pas très efficace !");
+                }
+                else{
+                    p.pointsDeVie -= this.pointsAttaque;
+                    console.log("Cette attaque est normale !");
+                }
+            }
         }     
     }
 }
