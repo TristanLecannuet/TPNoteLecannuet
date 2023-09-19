@@ -70,3 +70,9 @@ class Pokemon {
 let Salamèche = new Pokemon("Salamèche", 17, 5, "Feu");
 let Carapuce = new Pokemon("Carapuce", 20, 4, "Eau");
 let Bulbizarre = new Pokemon("Bulbizarre", 16, 6, "Plante");
+Carapuce.afficherInformations();
+Bulbizarre.afficherInformations();
+Carapuce.attaquer(Bulbizarre);
+Salamèche.afficherInformations();
+Salamèche.attaquer(Carapuce);
+Salamèche.attaquer(Bulbizarre);
