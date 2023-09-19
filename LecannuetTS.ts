@@ -11,4 +11,12 @@ class Pokemon{
         this.type = type;
     }
 
+    estMort():boolean{
+        if(this.pointsDeVie == 0)
+            return true;
+        else
+            return false;
+    }
+
+    
 }
