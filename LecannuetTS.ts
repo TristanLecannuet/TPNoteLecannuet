@@ -30,7 +30,7 @@ class Pokemon{
                     p.pointsDeVie -= (this.pointsAttaque * 2);
                     console.log("C'est super efficace !");
                 }
-                else if (p.type == "Eau"){
+                else if (p.type == "Eau" || p.type == "Feu"){
                     p.pointsDeVie -= (this.pointsAttaque / 2);
                     console.log("Ce n'est pas très efficace !");
                 }
@@ -44,7 +44,7 @@ class Pokemon{
                     p.pointsDeVie -= (this.pointsAttaque * 2);
                     console.log("C'est super efficace !");
                 }
-                else if (p.type == "Plante"){
+                else if (p.type == "Plante" || p.type == "Eau"){
                     p.pointsDeVie -= (this.pointsAttaque / 2);
                     console.log("Ce n'est pas très efficace !");
                 }
