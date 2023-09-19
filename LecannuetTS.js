@@ -63,4 +63,7 @@ class Pokemon {
             }
         }
     }
+    afficherInformations() {
+        console.log(`Ce pokémon est ${this.nom}. Il est de type ${this.type}, il a ${this.pointsDeVie} PV et ${this.pointsAttaque} PA.`);
+    }
 }
