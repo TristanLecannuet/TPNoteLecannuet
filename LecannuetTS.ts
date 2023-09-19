@@ -74,3 +74,7 @@ class Pokemon{
         console.log(`Ce pokémon est ${this.nom}. Il est de type ${this.type}, il a ${this.pointsDeVie} PV et ${this.pointsAttaque} PA.`)
     }
 }
+
+let Salamèche = new Pokemon("Salamèche", 17, 5, "Feu")
+let Carapuce = new Pokemon("Carapuce", 20, 4, "Eau")
+let Bulbizarre = new Pokemon("Bulbizarre", 16, 6, "Plante")
