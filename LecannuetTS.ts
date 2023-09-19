@@ -23,7 +23,22 @@ class Pokemon{
         if(this.estMort())
             console.log(`${this.nom} a succombé, il ne peut plus combattre !`)
         else if(p.estMort())
-            console.log(`${p.nom} ne peut plus se relever, il ne peut plus combattre !`)
-
+            console.log(`${p.nom} ne peut plus se relever, il ne peut plus combattre !`)           
+        else{
+            if(this.type == "Feu"){
+                if(p.type == "Plante"){
+                    p.pointsDeVie -= (this.pointsAttaque * 2);
+                    console.log("C'est super efficace !");
+                }
+                else if (p.type == "Eau"){
+                    p.pointsDeVie -= (this.pointsAttaque / 2);
+                    console.log("Ce n'est pas très efficace !");
+                }
+                else{
+                    p.pointsDeVie -= this.pointsAttaque;
+                    console.log("Cette attaque est normale !");
+                }
+            }
+        }     
     }
 }
